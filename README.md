@@ -67,7 +67,7 @@
 24. RSVP Page shows you details of the Concert along with an option to either: Attend, Not Attend or no Option `-`.
 25. If you open `concert_detail.html`, you will see an html form:
 
-        ```html
+        
                 <form action="{% url 'concert_attendee' %}" method="POST">
                 {% csrf_token %}
                 <input
@@ -86,7 +86,7 @@
                 </div>
                 <input type="submit" class="btn btn-primary" />
               </form>
-        ```
+       
 
 26. On `Submit` of this form, the details are sent to `concert_attendee` in `concert\views.py`.
 27. It does two validations:
